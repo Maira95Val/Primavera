@@ -179,6 +179,18 @@ audio::-webkit-media-controls-timeline {
       from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
       to   { opacity: 0; transform: translate(-50%, -50%) scale(2); }
     }
+
+    /* ----- RESPONSIVE EXTRA ---- */
+    @media (max-width: 600px) {
+      .audio-wrap {
+        width: 90%;
+        right: 5%;
+        bottom: 1rem;
+      }
+      audio {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -331,3 +343,4 @@ document.addEventListener("click", e => {
   </script>
 </body>
 </html>
+
